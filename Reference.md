@@ -40,3 +40,5 @@ mix phx.routes
 
 #missaoespacial
 #embuscadoproximonivel
+#astronautas
+#universoinfinito
