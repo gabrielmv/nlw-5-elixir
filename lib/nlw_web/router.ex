@@ -48,4 +48,8 @@ defmodule NlwWeb.Router do
       live_dashboard "/dashboard", metrics: NlwWeb.Telemetry
     end
   end
+
+  if Mix.env() == :dev do
+    forward "/sent_emails", Bamboo.SentEmailViewerPlug
+  end
 end

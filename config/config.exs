@@ -14,6 +14,8 @@ config :nlw, Nlw.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
+config :nlw, Nlw.Mailer, adapter: Bamboo.LocalAdapter
+
 # Configures the endpoint
 config :nlw, NlwWeb.Endpoint,
   url: [host: "localhost"],
